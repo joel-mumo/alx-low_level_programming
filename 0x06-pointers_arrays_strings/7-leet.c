@@ -7,7 +7,7 @@
  */
 char *leet(char *n)
 {
-	int x y;
+	int x, y;
 	char j1[] = "aAeEoOtTlL";
 	char j2[] = "4433007711";
 
