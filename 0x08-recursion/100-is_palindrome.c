@@ -25,7 +25,7 @@ int _pali(char *s, int p)
 	{
 		return (1);
 	}
-	if (*s == *(s + 1))
+	if (*s == *(s + p))
 	{
 		return (_pali(s + 1, p - 2));
 	}
@@ -38,7 +38,7 @@ int _pali(char *s, int p)
  */
 int is_palindrome(char *s)
 {
-	int length = _strlength(s);
+	int length = _strlengthi(s);
 
 	return (_pali(s, length - 1));
 }
