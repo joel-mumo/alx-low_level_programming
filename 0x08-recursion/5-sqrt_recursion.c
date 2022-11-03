@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - returns the natural square root of a number
+ * _sqrt - returns the natural square root of a number
  * @x: integer 1
  * @y: integer 2
  * Return: square root
@@ -18,6 +18,8 @@ int _sqrt(int x, int y)
 	}
 	else
 	{
+		return (-1);
+
 		return (-1);
 	}
 }
