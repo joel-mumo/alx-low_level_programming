@@ -10,16 +10,18 @@ int _sqrt(int x, int y)
 {
 	if  (y == 1 || y == 0)
 	{
-		return (1);
+		return (y);
 	}
 	else if (x * x < y)
+	{
+		return (_sqrt(x + 1, y));
+	}
+	else if (x * x == y)
 	{
 		return (x);
 	}
 	else
 	{
-		return (-1);
-
 		return (-1);
 	}
 }
