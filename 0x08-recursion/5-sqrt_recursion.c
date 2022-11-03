@@ -6,7 +6,7 @@
  * @y: integer 2
  * Return: square root
  */
-int sqrt(int x, int y)
+int _sqrt(int x, int y)
 {
 	if  (y == 1 || y == 0)
 	{
@@ -34,5 +34,5 @@ int _sqrt_recursion(int n)
 	if (z < 0)
 		return (-1);
 	else
-		return (sqrt(z, n));
+		return (_sqrt(z, n));
 }
