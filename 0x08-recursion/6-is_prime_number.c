@@ -18,7 +18,7 @@ int _prime(int j, int itt)
 	}
 	else if (j % itt != 0)
 	{
-		return (prime(j, itt + 1));
+		return (_prime(j, itt + 1));
 	}
 	else
 	{
