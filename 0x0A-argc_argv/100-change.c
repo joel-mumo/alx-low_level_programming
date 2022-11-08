@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	while (coins[pos] != "\0")
+	while (coins[pos] != '\0')
 	{
 		if (total >= coins[pos])
 		{
