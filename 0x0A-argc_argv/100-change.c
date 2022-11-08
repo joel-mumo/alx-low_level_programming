@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	{
 		if (total >= coins[pos])
 		{
-			alx = (total \ coins[pos]);
+			alx = (total / coins[pos]);
 			change += alx;
 			total -= coins[pos] * alx;
 		}
