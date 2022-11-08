@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 			change += alx;
 			total -= coins[pos] * alx;
 		}
-		alx++;
+		pos++;
 	}
 	printf("%d\n", change);
 	return (0);
