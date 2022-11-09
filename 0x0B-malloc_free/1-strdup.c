@@ -50,7 +50,7 @@ char *_strdup(char *str)
 	char *d;
 	unsigned int size;
 
-	if (*str == 0)
+	if (str == 0)
 	{
 		return (NULL);
 	}
