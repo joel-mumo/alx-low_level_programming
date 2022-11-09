@@ -26,7 +26,7 @@ int _strln(char *s)
  * @dest: Destination array
  * Return: dest
  */
-char *_strcpy(char *src, char *dest)
+char *_strcpy(char *dest, char *src)
 {
 	int j = 0;
 
