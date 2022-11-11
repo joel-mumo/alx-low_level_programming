@@ -22,6 +22,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size == old_size)
 	{
+		return (ptr);
+	}
+
+	if (new_size == 0 && ptr != NULL)
+	{
 		free(ptr);
 		return (0);
 	}
@@ -30,7 +35,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (realloc == NULL)
 		return (0);
 
-	for (j = 0; j < (old_size || j < new_size); j++)
+	for (j = 0; (j < old_size || j < new_size); j++)
 	{
 		*(realloc + j) = clone[j];
 	}
