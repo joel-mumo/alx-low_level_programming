@@ -23,4 +23,4 @@ int *array_range(int min, int max)
 		array[j++] = s++;
 
 	return (array);
-
+}
