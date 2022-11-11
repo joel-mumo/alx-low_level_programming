@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned long h;
+	unsigned long mul;
 	int x, y;
 
 	if (argc != 3)
@@ -22,15 +22,15 @@ int main(int argc, char *argv[])
 	{
 		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			if (argv[x][y] >= 57 || argv[x][y] <= 48)
+			if (argv[x][y] > 57 || argv[x][y] < 48)
 			{
 				printf("Error\n");
 				exit(98);
 			}
 		}
 	}
-	h = atol(argv[1]) * atol(argv[2]);
-	printf("%lu\n", h);
+	mul = atol(argv[1]) * atol(argv[2]);
+	printf("%lu\n", mul);
 
 	return (0);
 }
