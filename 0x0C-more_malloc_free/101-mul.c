@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int h;
+	unsigned long h;
 	int x, y;
 
 	if (argc != 3)
