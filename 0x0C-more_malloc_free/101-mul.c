@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	h = atoi(argv[1]) * atoi(argv[2]);
+	h = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", h);
 
 	return (0);
