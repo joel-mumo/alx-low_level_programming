@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	ag1 = atoi(argv[1]);
 	ag2 = atoi(argv[1]);
 
-	func = get_op_func(argv[1]);
+	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
