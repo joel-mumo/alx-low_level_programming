@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	arg1 = atoi(argv[1]);
@@ -26,20 +26,20 @@ int main(int argc, char *argv[])
 
 	if (!func)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
 	o = *argv[2];
 
-	if ((o == "/" || 0 == "%") && arg2 == 0)
+	if ((o == "/" || o == "%") && arg2 == 0)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(100);
 	}
 	result = func(arg1, arg2);
 
-	_putchar("%d\n", result);
+	printf("%d\n", result);
 
 	return (0);
 }
