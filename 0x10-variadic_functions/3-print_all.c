@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
  * print_all - prints anything.
@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		}
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(varlist, int)), g = 1;
@@ -48,5 +48,5 @@ void print_all(const char * const format, ...)
 				break;
 		} i++;
 	}
-	printf("\n"), va_end(var_list);
+	printf("\n"), va_end(varlist);
 }
