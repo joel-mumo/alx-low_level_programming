@@ -30,7 +30,7 @@ int op_sub(int a, int b)
  * @b: Second integer
  * Return: The product of a and b
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
