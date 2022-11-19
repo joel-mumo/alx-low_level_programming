@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == t_arg[j] && g)
 			{
-				printf(",");
+				printf(", ");
 				break;
 			} j++;
 		}
@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(varlist, int)), g = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(varlist, int)), g = 1;
+				printf("%f", va_arg(varlist, double)), g = 1;
 				break;
 			case 's':
 				str = va_arg(varlist, char *), g = 1;
