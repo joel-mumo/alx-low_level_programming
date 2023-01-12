@@ -34,7 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		sin_node = sin_node->next;
 	}
 
-	if (cont == index && sin_node)
+	if (cont && sin_node == index)
 	{
 		new_node->prev = sin_node;
 		new_node->next = sin_node->next;
